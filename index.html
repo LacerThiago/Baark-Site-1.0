@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baark | Startup</title>
+    <link rel="stylesheet" href="dist/output.css" />
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="shortcut icon" href="img/baark-logo.png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="min-h-screen font-[inter]">
+    <header class="border-gray-200 border-b py-3 px-4">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="flex gap-2 items-center">
+          <img src="img/baark-logo.png" class="w-12 h-12" alt="baark logo" />
+          <h1
+            class="text-black font-[Poppins] font-extrabold tracking-tight text-xl"
+          >
+            Baark Startup
+          </h1>
+        </div>
+
+        <a
+          href="https://www.instagram.com/Baarkstartup/"
+          target="_blank"
+          class="text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition"
+        >
+          Instagram
+        </a>
+      </div>
+    </header>
+
+    <section class="py-32 p-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mx-auto text-center">
+          <h1
+            data-animation="animate-fade-in-up"
+            class="text-black font-[Poppins] font-extrabold tracking-tight mb-4 text-4xl md:text-5xl leading-tight"
+          >
+            Peça qualquer serviço <br class="hidden md:block" />
+            - alguém faz por você
+          </h1>
+
+          <p
+            data-animation="animate-fade-in-up"
+            class="boxDelay-200 text-zinc-600 mb-4"
+          >
+            Pense no Baark como um Uber para freelancers. Você só precisa dizer
+            o que quer e quanto paga. A gente cuida de tudo, encontramos os
+            profissionais, gerenciamos o trabalho e garantimos a entrega do
+            produto.
+          </p>
+
+          <a
+            href="#contato"
+            data-animation="animate-scale-up"
+            class="boxDelay-300 max-w-[180px] justify-center bg-gradient-to-r from-indigo-500 to-indigo-600 cursor-pointer py-2 px-4 flex gap-1 items-center hover:scale-105 transition ease duration-300 rounded-lg shadow-xl hover:shadow-2xl text-white font-bold mx-auto"
+          >
+            Pedir serviço
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-arrow-right-icon lucide-arrow-right"
+            >
+              <path d="M5 12h14" />
+              <path d="m12 5 7 7-7 7" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 p-4">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            class="text-2xl md:text-4xl font-[Poppins] font-semibold tracking-tight text-black mb-4"
+          >
+            Como funciona
+          </h2>
+          <p class="text-zinc-600">Simples, rápido e sem complicação</p>
+        </div>
+
+        <div
+          class="grid py-10 max-w-4xl gap-4 mx-auto grid-cols-1 md:grid-cols-3 justify-center"
+        >
+          <div
+            data-animation="animate-card-up-scale"
+            class="flex justify-center text-center items-center flex-col gap-3 border border-gray-300 p-6 md:pb-24 pb-16 rounded-xl"
+          >
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-200"
+            >
+              <p class="text-indigo-500 font-extrabold text-xl font-[Poppins]">
+                1
+              </p>
+            </div>
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              Descreva o que você precisa
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Conte para gente o serviço que você quer e quanto está disposto a
+              pagar.
+            </p>
+          </div>
+
+          <div
+            data-animation="animate-card-up-scale"
+            class="flex boxDelay-200 justify-center text-center items-center flex-col gap-3 border border-gray-300 p-6 md:pb-24 pb-16 rounded-xl"
+          >
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-200"
+            >
+              <p class="text-indigo-500 font-extrabold text-xl font-[Poppins]">
+                2
+              </p>
+            </div>
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              A gente cuida de tudo
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Baark publica seu pedido, encontra os freelancers certos e
+              gerencia todo o processo.
+            </p>
+          </div>
+
+          <div
+            data-animation="animate-card-up-scale"
+            class="boxDelay-300 flex justify-center text-center items-center flex-col gap-3 border border-gray-300 p-6 md:pb-24 pb-16 rounded-xl"
+          >
+            <div
+              class="w-16 h-16 rounded-full flex items-center justify-center bg-gray-200"
+            >
+              <p class="text-indigo-500 font-extrabold text-xl font-[Poppins]">
+                3
+              </p>
+            </div>
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              Receba o trabalho pronto
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Você recebe o serviço finalizado, sem precisar negociar ou
+              procurar ninguém.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mx-auto text-center mb-8">
+          <h2
+            class="text-2xl md:text-4xl font-[Poppins] font-semibold tracking-tight text-black mb-4"
+          >
+            Por que usar a Baark?
+          </h2>
+        </div>
+
+        <div
+          class="grid py-10 max-w-5xl text-center mx-auto md:grid-cols-3 gap-6 justify-center"
+        >
+          <div
+            data-animation="animate-card-up-scale"
+            class="flex text-center items-center max-w-xs flex-col gap-2"
+          >
+            <div
+              class="bg-indigo-300 text-indigo-500 justify-center w-10 h-10 rounded-lg flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-clock-icon lucide-clock w-6 h-6"
+              >
+                <path d="M12 6v6l4 2" />
+                <circle cx="12" cy="12" r="10" />
+              </svg>
+            </div>
+
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              Economize tempo
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Sem ficar procurando freelancers ou comparando portfólios. A gente
+              faz isso por você
+            </p>
+          </div>
+
+          <div
+            data-animation="animate-card-up-scale"
+            class="boxDelay-200 flex text-center items-center max-w-xs flex-col gap-2"
+          >
+            <div
+              class="bg-indigo-300 text-indigo-500 justify-center w-10 h-10 rounded-lg flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-shield-icon lucide-shield w-6 h-6"
+              >
+                <path
+                  d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                />
+              </svg>
+            </div>
+
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              Sem negociação
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Você define o preço desde o início. A Baark fica apenas com 10% do
+              valor final
+            </p>
+          </div>
+
+          <div
+            data-animation="animate-card-up-scale"
+            class="boxDelay-300 flex text-center items-center max-w-xs flex-col gap-2"
+          >
+            <div
+              class="bg-indigo-300 text-indigo-500 justify-center w-10 h-10 rounded-lg flex items-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-circle-check-icon lucide-circle-check w-6 h-6"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="m9 12 2 2 4-4" />
+              </svg>
+            </div>
+
+            <h3
+              class="text-xl font-[Poppins] font-semibold tracking-tight text-black"
+            >
+              Gerenciamento completo
+            </h3>
+
+            <p class="text-sm text-zinc-600 font-bold">
+              Baark acompanha o trabalho do início ao fim. Você só relaxa e
+              espera o resultado
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="pt-16 pb-32 p-4 relative overflow-hidden">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mx-auto text-center mb-8">
+          <h2
+            class="text-2xl md:text-4xl font-[Poppins] font-semibold tracking-tight text-black mb-4"
+          >
+            Faça seu pedido
+          </h2>
+          <p class="text-zinc-600">
+            Preencha os campos abaixo e entraremos em contato em breve
+          </p>
+        </div>
+
+        <div
+          id="contato"
+          data-animation="animate-slide-in-left"
+          class="max-w-2xl mx-auto p-8 rounded-2xl border border-gray-200 bg-white"
+        >
+          <form class="space-y-6 text-left" id="pedidoForm">
+            <div class="space-y-1">
+              <label class="block text-sm font-medium text-gray-900">
+                Nome do cliente
+              </label>
+              <input
+                required
+                type="text"
+                name="nome"
+                placeholder='Seu nome ou "Anônimo"'
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <div class="space-y-1">
+              <label
+                class="flex items-center gap-2 text-sm font-medium text-gray-900"
+              >
+                Telefone / WhatsApp
+
+                <span class="relative group cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-info-icon lucide-info text-gray-300 hover:text-indigo-500"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+
+                  <div
+                    class="absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                  >
+                    Usado apenas para avisar quando o pedido estiver pronto ou
+                    para atualizações rápidas.<br /><br />
+                    <strong>Importante:</strong> mande uma mensagem para o Baark
+                    no WhatsApp ou Email para garantir o recebimento.
+                  </div>
+                </span>
+              </label>
+
+              <input
+                required
+                type="text"
+                name="telefone"
+                placeholder="(11) 99999-9999"
+                class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+              />
+            </div>
+
+            <div class="space-y-2">
+              <label
+                class="flex items-center gap-2 text-sm font-medium text-gray-900"
+              >
+                Resuma o seu pedido
+
+                <span class="relative group cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-info-icon lucide-info text-gray-300 hover:text-indigo-500"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+
+                  <div
+                    class="absolute left-1/2 top-full z-10 mt-2 w-80 -translate-x-1/2 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                  >
+                    Descreva em uma frase o que você quer conseguir.<br /><br />
+                    Exemplos:
+                    <ul class="mt-1 list-disc list-inside">
+                      <li>Faça uma logo para o meu negócio</li>
+                      <li>Faça um design</li>
+                      <li>Faça um vídeo engraçado</li>
+                      <li>Faça um desenho</li>
+                      <li>Faça uma edit</li>
+                      <li>Outro (pode ser qualquer coisa)</li>
+                    </ul>
+                  </div>
+                </span>
+              </label>
+
+              <div class="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  data-fill="Quero uma logo para o meu negócio"
+                  class="px-3 py-1.5 text-sm rounded-full bg-gray-100 hover:bg-indigo-100 transition"
+                >
+                  💼 Logo
+                </button>
+                <button
+                  type="button"
+                  data-fill="Quero um design"
+                  class="px-3 py-1.5 text-sm rounded-full bg-gray-100 hover:bg-indigo-100 transition"
+                >
+                  🎨 Design
+                </button>
+                <button
+                  type="button"
+                  data-fill="Quero um vídeo engraçado"
+                  class="px-3 py-1.5 text-sm rounded-full bg-gray-100 hover:bg-indigo-100 transition"
+                >
+                  🎬 Vídeo
+                </button>
+                <button
+                  type="button"
+                  data-fill="Quero um desenho"
+                  class="px-3 py-1.5 text-sm rounded-full bg-gray-100 hover:bg-indigo-100 transition"
+                >
+                  ✏️ Desenho
+                </button>
+                <button
+                  type="button"
+                  data-fill="Quero uma edit"
+                  class="px-3 py-1.5 text-sm rounded-full bg-gray-100 hover:bg-indigo-100 transition"
+                >
+                  ✂️ Edit
+                </button>
+              </div>
+
+              <textarea
+                required
+                name="resumo"
+                id="resumo"
+                rows="2"
+                placeholder="Descreva em uma frase o que você quer conseguir"
+                class="w-full resize-none rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+              ></textarea>
+            </div>
+
+            <div class="space-y-2">
+              <label
+                class="flex items-center gap-2 text-sm font-medium text-gray-900"
+              >
+                Detalhes do pedido
+
+                <span class="relative group cursor-pointer">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-info-icon lucide-info text-gray-300 hover:text-indigo-500"
+                  >
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M12 16v-4" />
+                    <path d="M12 8h.01" />
+                  </svg>
+
+                  <div
+                    class="absolute left-1/2 top-full z-10 mt-2 w-96 -translate-x-1/2 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                  >
+                    Explique com mais detalhes o que você quer conseguir.<br />
+                    Pode escrever do seu jeito — quanto mais claro, melhor o
+                    resultado.<br /><br />
+                    Se envolver vídeo, foto ou imagem, envie o conteúdo para o
+                    email do Baark.
+                  </div>
+                </span>
+              </label>
+
+              <textarea
+                required
+                name="descricao"
+                rows="6"
+                placeholder="Explique com mais detalhes o que você quer."
+                class="w-full resize-none rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+              ></textarea>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="space-y-1">
+                <label
+                  class="flex items-center gap-2 text-sm font-medium text-gray-900"
+                >
+                  Prazo (em horas)
+
+                  <span class="relative group cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info-icon lucide-info text-gray-300 hover:text-indigo-500"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 16v-4" />
+                      <path d="M12 8h.01" />
+                    </svg>
+
+                    <div
+                      class="absolute left-1/2 top-full z-10 mt-2 w-64 -translate-x-1/2 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                    >
+                      O tempo começa a contar assim que alguém aceitar o
+                      pedido.<br />
+                      Mínimo: <strong>2 horas</strong>
+                    </div>
+                  </span>
+                </label>
+
+                <input
+                  required
+                  name="prazo"
+                  type="number"
+                  min="2"
+                  placeholder="Ex: 24"
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label
+                  class="flex items-center gap-2 text-sm font-medium text-gray-900"
+                >
+                  Orçamento (R$)
+
+                  <span class="relative group cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-info-icon lucide-info text-gray-300 hover:text-indigo-500"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M12 16v-4" />
+                      <path d="M12 8h.01" />
+                    </svg>
+
+                    <div
+                      class="absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-lg border border-gray-200 bg-white p-3 text-xs text-gray-600 shadow-lg opacity-0 group-hover:opacity-100 transition pointer-events-none"
+                    >
+                      Escolha o valor que achar justo para o pedido.<br /><br />
+                      <strong>Mínimo:</strong> R$10<br />
+                      Você só paga quando o pedido estiver pronto e aprovado.<br /><br />
+                      Dica: pesquise quanto algo parecido costuma custar.
+                    </div>
+                  </span>
+                </label>
+
+                <input
+                  required
+                  name="orcamento"
+                  type="number"
+                  min="10"
+                  placeholder="Mínimo R$10"
+                  class="w-full rounded-lg border border-gray-300 px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-purple-500"
+                />
+              </div>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full mt-4 flex items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-indigo-500 to-indigo-600 py-3 font-semibold text-white hover:opacity-90 hover:scale-95 shadow-2xl hover:shadow-xl transition"
+            >
+              Enviar pedido
+            </button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <svg
+          class="absolute bottom-0 left-0 w-full h-32"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,64
+       C120,80 240,100 360,96
+       C480,92 600,64 720,64
+       C840,64 960,92 1080,96
+       C1200,100 1320,80 1440,64
+       L1440,120 L0,120 Z"
+            fill="#7457D1"
+          />
+        </svg>
+      </div>
+    </section>
+
+    <section class="py-16 bg-[#7457D1]">
+      <div class="max-w-7xl mx-auto">
+        <div class="max-w-2xl mx-auto text-center">
+          <h2
+            data-animation="animate-fade-in-up"
+            class="text-2xl md:text-4xl font-[Poppins] font-semibold tracking-tight text-white mb-4"
+          >
+            Sobre o Baark
+          </h2>
+          <p
+            class="text-sm md:text-base text-zinc-200 boxDelay-200 mb-4 font-medium"
+            data-animation="animate-fade-in-up"
+          >
+            Baark nasceu para simplificar a forma como você contrata serviços
+            freelance. Sabemos que encontrar o profissional certo, negociar
+            preços e gerenciar projetos pode ser cansativo e tomar muito tempo.
+          </p>
+          <p
+            class="text-sm md:text-base text-zinc-200 boxDelay-300 font-medium"
+            data-animation="animate-fade-in-up"
+          >
+            Por isso, criamos uma plataforma onde você só precisa dizer o que
+            quer e quanto paga. Nós cuidamos de tudo: desde encontrar os
+            melhores freelancers até garantir que o trabalho seja entregue com
+            qualidade e no prazo. Simples assim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="py-5 text-white border-t-2 bg-[#7a5fd3] text-center border-[#694bce]"
+    >
+      © 2025 Baark. Seu serviço, sem complicação.
+    </footer>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const animation = entry.target.dataset.animation;
+              entry.target.classList.remove("opacity-0");
+              entry.target.classList.add(animation);
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+
+      document
+        .querySelectorAll("[data-animation]")
+        .forEach((el) => observer.observe(el));
+
+      (function () {
+        emailjs.init("W1dqloDVfgxqlLmTa");
+      })();
+
+      const form = document.getElementById("pedidoForm");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        emailjs.sendForm("service_2ar7az5", "template_zdz92us", this).then(
+          function () {
+            alert("Pedido enviado com sucesso!");
+            form.reset();
+          },
+          function (error) {
+            alert("Erro ao enviar. Tente novamente.");
+            console.error("EmailJS error:", error);
+          }
+        );
+      });
+
+      const resumoTextarea = document.getElementById("resumo");
+
+      document.querySelectorAll("[data-fill]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const text = button.getAttribute("data-fill");
+          resumoTextarea.value = text || "";
+          resumoTextarea.focus();
+        });
+      });
+    </script>
+  </body>
+</html>

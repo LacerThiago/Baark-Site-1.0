@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.6);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes card-scale-up {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-fade-in-up {
+    animation: fade-in-up 0.5s ease-out both;
+  }
+
+  .animate-card-up-scale {
+    animation: card-scale-up 0.6s ease-out both;
+  }
+
+  .animate-slide-in-left {
+    animation: slide-in-left 0.6s ease-out both;
+  }
+
+  .animate-scale-up {
+    animation: scale-up 0.7s ease-out both;
+  }
+  .boxDelay-200 {
+    animation-delay: 200ms;
+  }
+
+  .boxDelay-300 {
+    animation-delay: 300ms;
+  }
+
+  .boxDelay-400 {
+    animation-delay: 400ms;
+  }
+}
